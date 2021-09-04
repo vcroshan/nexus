@@ -40,7 +40,7 @@ Create a new maven (proxy) repository and configure it like:
 6. configure your maven client to use nexus repo
 
 Put this in your settings.xml file. This will configure the credentials to publish to your hosted repos, and will tell your mvn to use your repo as a mirror of central:
-
+`
 <?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.1.0"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -68,7 +68,7 @@ Put this in your settings.xml file. This will configure the credentials to publi
     </mirror>
   </mirrors>
 
-</settings>
+</settings>`
 
 7. Put the below in your pom.xml
 <project>
