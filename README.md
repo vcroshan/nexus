@@ -71,24 +71,24 @@ Put this in your settings.xml file. This will configure the credentials to publi
 </settings>```
 
 7. Put the below in your pom.xml
-<project>
+```<project>
   <repositories>
     <repository>
       <id>maven-group</id>
-      <url>http://3.216.79.213:8081/repository/maven-group/</url>
+      <url>http://your-host:8081/repository/maven-group/</url>
     </repository>
   </repositories>
 
     <distributionManagement>
     <snapshotRepository>
       <id>maven-snapshots</id>
-      <url>http://3.216.79.213:8081/repository/maven-snapshots/</url>
+      <url>http://your-host:8081/repository/maven-snapshots/</url>
     </snapshotRepository>
     <repository>
       <id>maven-releases</id>
-      <url>http://3.216.79.213:8081/repository/maven-releases/</url>
+      <url>http://your-host:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
- </project>
+ </project>```
 
 8. deploy the package to nexus using maven command : mvn clean deploy
