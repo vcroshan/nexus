@@ -22,7 +22,7 @@ Create a new maven (hosted) repository and configure it like:
 3. configure a maven release repository
 A repository for Maven artifact that you deploy without -SNAPSHOT in the end of the version tag of your pom.xml:
 
-<version>1.0.0</version>
+`<version>1.0.0</version>`
 Create a new maven (hosted) repository and configure it like:
 
 ![image](https://user-images.githubusercontent.com/20510066/132102884-91f66929-94b9-4050-bdd1-135fb2fc175d.png)
