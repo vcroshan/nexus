@@ -34,6 +34,7 @@ Create a new maven (proxy) repository and configure it like:
 ![image](https://user-images.githubusercontent.com/20510066/132102907-f7c5f463-0188-4eaa-a221-4ad6a1f252ac.png)
 
 5. create a group repo
+
 ![image](https://user-images.githubusercontent.com/20510066/132102934-e6819c56-b536-4c26-a8e1-56252cbadb24.png)
 
 6. configure your maven client to use nexus repo
