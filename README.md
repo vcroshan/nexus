@@ -68,10 +68,12 @@ Put this in your settings.xml file. This will configure the credentials to publi
     </mirror>
   </mirrors>
 
-</settings>```
+</settings>
+```
 
 7. Put the below in your pom.xml
-```<project>
+```
+<project>
   <repositories>
     <repository>
       <id>maven-group</id>
@@ -89,6 +91,7 @@ Put this in your settings.xml file. This will configure the credentials to publi
       <url>http://your-host:8081/repository/maven-releases/</url>
     </repository>
   </distributionManagement>
- </project>```
+ </project>
+ ```
 
 8. deploy the package to nexus using maven command : mvn clean deploy
