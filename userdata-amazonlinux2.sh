@@ -14,4 +14,4 @@ sudo curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-c
 #changing the permissions
 sudo chmod +x /usr/local/bin/docker-compose
 
-systemctl restart docker
+sudo systemctl restart docker
