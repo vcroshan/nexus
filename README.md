@@ -10,6 +10,7 @@ execute the docker compose yml file to deploy Nexus on the server
     a. maven-snapshots
     b. maven-releases
     c. maven-central
+    d. maven-group
 2. configure a maven snapshot repository
 A repository for Maven artifacts that you deploy with -SNAPSHOT in the end of the version tag of your pom.xml:
 
