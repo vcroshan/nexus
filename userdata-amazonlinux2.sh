@@ -15,3 +15,6 @@ sudo curl -L https://github.com/docker/compose/releases/download/v2.14.2/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 sudo systemctl restart docker
+
+sudo mkdir /nexus-data
+sudo chmod 777 /nexus-data
