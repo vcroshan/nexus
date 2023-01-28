@@ -96,3 +96,27 @@ Put this in your settings.xml file. This will configure the credentials to publi
  ```
 
 8. deploy the package to nexus using maven command : mvn clean deploy
+
+# To create a private docker registry
+1. create a daemon.json under /etc/docker/ if doesn't exists
+
+2. Create a blob store to store docker images
+![image](https://user-images.githubusercontent.com/20510066/215263459-06ff01c6-3522-4243-b5ee-e1400762b6de.png)
+
+3. Create a docker repository (docker (hosted))
+![image](https://user-images.githubusercontent.com/20510066/215263508-4177b7da-da82-4ee2-b556-96fb2fddfb32.png)
+![image](https://user-images.githubusercontent.com/20510066/215263523-0b1a3241-3d43-4bae-a4bc-f04a8597dfbe.png)
+
+4. configure access for docker token by adding docker bearer token in Realms section in nexus 
+![image](https://user-images.githubusercontent.com/20510066/215263631-4ad17b31-157b-4acd-aba5-fc18a25715e1.png)
+
+5. add the insure registry details as below
+
+{
+"insecure-registries" : ["<IP address>:5003"]
+}
+5. restart daemon and docker services in the server
+   sudo systemctl restart daemon
+   sudo systemctl restart docker
+6. login to private docker registry
+  docker login http://<IP address>:5003
