@@ -120,4 +120,5 @@ Put this in your settings.xml file. This will configure the credentials to publi
    sudo systemctl restart daemon
    sudo systemctl restart docker
 7. login to private docker registry
-  docker login http://<IP address>:5003
+  docker login <IP address>:5003
+8. Once you create a docker image using docker build command (docker build . -t <IP address>:5003/<repositoryname>/<image name>:latest), you can push the image to repository using docker push <IP address>:5003/<repositoryname>/<image name>:latest
