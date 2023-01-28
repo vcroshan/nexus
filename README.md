@@ -115,8 +115,9 @@ Put this in your settings.xml file. This will configure the credentials to publi
 {
 "insecure-registries" : ["<IP address>:5003"]
 }
-5. restart daemon and docker services in the server
+  
+6. restart daemon and docker services in the server
    sudo systemctl restart daemon
    sudo systemctl restart docker
-6. login to private docker registry
+7. login to private docker registry
   docker login http://<IP address>:5003
